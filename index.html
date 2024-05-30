@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartWave Tech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="screen">
+    <div class="logo animated-logo">SmartWave</div>
+    <h2>Welcome on board!</h2>
+    <p>We are not just a tech service provider; we are your dedicated partner in navigating the ever-evolving landscape of technology</p>
+    <button id="get-started-btn" class="primary-btn">Get Started</button>
+  </div>
+
+  <!-- Sign Up Screen -->
+  <div id="signup-screen" class="screen hidden">
+    <div class="logo">SmartWave</div>
+    <h2>Sign up</h2>
+    <button class="social-btn">Continue with Google</button>
+    <button class="social-btn">Continue with Apple</button>
+    <form id="signup-form">
+      <input type="email" id="signup-email" placeholder="Email">
+      <input type="password" id="signup-password" placeholder="Password">
+      <button type="submit" class="primary-btn">Continue</button>
+    </form>
+    <p>Already have an account? <a href="#" id="go-to-login">Login</a></p>
+  </div>
+
+  <!-- Login Screen -->
+  <div id="login-screen" class="screen hidden">
+    <div class="logo">SmartWave</div>
+    <h2>Login</h2>
+    <button class="social-btn">Continue with Google</button>
+    <button class="social-btn">Continue with Apple</button>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email">
+      <input type="password" id="login-password" placeholder="Password">
+      <button type="submit" class="primary-btn">Login</button>
+    </form>
+  </div>
+
+  <!-- Profile Setup Screen -->
+  <div id="profile-setup-screen" class="screen hidden">
+    <div class="logo">SmartWave</div>
+    <h2>Profile Setup</h2>
+    <form id="profile-setup-form">
+      <input type="text" id="profile-name" placeholder="Full Name">
+      <input type="text" id="profile-role" placeholder="Role">
+      <button type="submit" class="primary-btn">Save Profile</button>
+    </form>
+  </div>
+
+  <!-- Dashboard Screen -->
+  <div id="dashboard-screen" class="screen hidden">
+    <div class="logo">SmartWave</div>
+    <h2>Dashboard</h2>
+    <button id="create-event-btn" class="primary-btn">Create New Event</button>
+    <button id="view-events-btn" class="primary-btn">View Events</button>
+  </div>
+
+  <!-- Create Event Screen -->
+  <div id="create-event-screen" class="screen hidden">
+    <div class="logo">SmartWave</div>
+    <h2>Create an event</h2>
+    <form id="create-event-form">
+      <input type="text" id="event-title" placeholder="Title">
+      <select id="event-category">
+        <option value="meetings">Meetings</option>
+        <option value="workshops">Workshops</option>
+        <option value="brainstorming">Brainstorming</option>
+        <option value="design">Design</option>
+        <option value="data-science">Data Science</option>
+      </select>
+      <input type="datetime-local" id="event-start" placeholder="Start Date & Time">
+      <input type="datetime-local" id="event-end" placeholder="End Date & Time">
+      <button type="submit" class="primary-btn">Save event</button>
+    </form>
+  </div>
+
+  <!-- Event Details Screen -->
+  <div id="event-details-screen" class="screen hidden">
+    <div class="logo">SmartWave</div>
+    <h2>Event Details</h2>
+    <div id="event-details"></div>
+    <button id="back-to-dashboard" class="primary-btn">Back to Dashboard</button>
+  </div>
+
+  <!-- Congratulations Screen -->
+  <div id="congratulations-screen" class="screen hidden">
+    <div class="logo">SmartWave</div>
+    <h2>Congratulations!</h2>
+    <p>Your event has been created successfully.</p>
+    <p>CEO Francis Royce will get back to you with a call.</p>
+    <button id="go-to-dashboard" class="primary-btn">Go to Dashboard</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
